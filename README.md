@@ -39,9 +39,23 @@ Developed by: Jagadeesh.A
 RegisterNumber: 24010183
 ```
  F1
- ![Screenshot (36)](https://github.com/user-attachments/assets/e52d90af-9a39-46ea-8e51-8f67b6d51092)
+```
+ module logic_function2(a,b,c,d,f1);
+ input a,b,c,d;
+ output f1;
+ assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+ endmodule
+```
+
  F2
- ![Screenshot (39)](https://github.com/user-attachments/assets/14b8345d-ef07-4356-90d5-097eec38a60c)
+ ```
+module logic_function2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
+```
+
 
 
 
